@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversor de Temperaturas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h1>Conversor Web de Temperaturas</h1>
+
+        <form action="TemperaturaServlet" method="post">
+
+            Temperatura:
+            <input type="number" name="temperatura" step="0.01" required>
+
+            <br><br>
+
+            Conversión:
+            <select name="tipoConversion" required>
+                <option value="CelsiusFahrenheit">Celsius a Fahrenheit</option>
+                <option value="FahrenheitCelsius">Fahrenheit a Celsius</option>
+                <option value="CelsiusKelvin">Celsius a Kelvin</option>
+                <option value="KelvinCelsius">Kelvin a Celsius</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Convertir">
+
+        </form>
+
+    </body>
+</html>
